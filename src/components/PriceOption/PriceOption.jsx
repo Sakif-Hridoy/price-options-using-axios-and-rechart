@@ -6,7 +6,7 @@ const PriceOption = ({ option }) => {
   const { name, price, features } = option;
   return (
     <div>
-      <div className="bg-blue-500 rounded-md p-4 text-white flex flex-col">
+      <div className="bg-blue-500 rounded-md p-4 text-white flex flex-col cursor-pointer">
         <h2 className="text-center">
           <span className="text-7xl font-extrabold">{price}</span>
           <span className="text-2xl">/mon</span>
@@ -18,7 +18,7 @@ const PriceOption = ({ option }) => {
         ))}
        </div>
       </div>
-      <button className="mt-12 bg-green-600 w-full py-4 hover:bg-green-900 font-bold">
+      <button className="mt-4 bg-green-600 w-full py-4 hover:bg-green-900 font-bold">
         Buy Now
       </button>
     </div>
